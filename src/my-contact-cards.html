@@ -12,8 +12,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="shared-styles.html">
 <link rel="import" href="../bower_components/paper-card/paper-card.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-fab/paper-fab.html">
 <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../bower_components/iron-list/iron-list.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+
 
 
 <dom-module id="my-contact-cards">
@@ -80,8 +83,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                       [[item.miniOnePagerHolder.textField]]
                   </div>
                   <div class="card-actions">
-                      <paper-button>Share</paper-button>
-                      <paper-button>Explore!</paper-button>
+                      <paper-button toggles raised class="blue">Select</paper-button>
+                      <paper-fab toggles raised class="blue" icon="check"></paper-fab>
                   </div>
               </paper-card>
           </div>
